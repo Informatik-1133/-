@@ -220,49 +220,6 @@
             width: 100%;
         }
         
- <!--       /* Розклад рисунок */
-        .schedule-img-container {
-            width: 100%;
-            overflow: hidden;
-            border-radius: 14px;
-            margin: 18px 0;
-            border: 2px solid var(--border-light);
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            box-shadow: 0 4px 12px var(--shadow-light);
-            position: relative;
-        }
-
-        .schedule-img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.3s ease;
-            max-width: 100%;
-        }
-
-        .schedule-img.zoomed {
-            transform: scale(1.8);
-            z-index: 1000;
-            position: relative;
-        }
-
-        .schedule-img.fullscreen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            object-fit: contain;
-            z-index: 9999;
-            background: white;
-            padding: 20px;
-            transform: none !important;
-        }
--->
         .overlay {
             display: none;
             position: fixed;
@@ -487,7 +444,7 @@
         
         /* Додаткові стилі для кращої читабельності */
         .teacher-name {
-            font-size: 0.9rem;
+            font-size: 0.86rem;
             color: var(--text-light);
             margin-top: 2px;
         }
@@ -616,8 +573,7 @@
                     <thead>
                         <tr>
                             <th>№</th>
-                            <th>Предмет</th>
-                            <th>Викладач</th>
+                            <th>Предмет / Викладач</th>
                             <th>Увійти на відео конференцію</th>
                             <th>Підписатись на курс ClassRoom</th>
                         </tr>
@@ -628,10 +584,7 @@
                             <td>1</td>
                             <td>
                                 <div class="course-name">Інформаційні системи і технології в КД</div>
-                            </td>
-                            <td>
-                                Демченко
-                                <div class="teacher-name">Галина Миколаївна</div>
+								<div class="teacher-name">Демченко Галина Миколаївна</div>
                             </td>
                             <td>
                                 <div class="btn-container">
@@ -656,10 +609,7 @@
                             <td>2</td>
                             <td>
                                 <div class="course-name">Ринкові дослідження</div>
-                            </td>
-                            <td>
-                                Донцова
-                                <div class="teacher-name">Лариса Дем'янівна</div>
+								<div class="teacher-name">Донцова Лариса Дем'янівна</div>
                             </td>
                             <td>
                                 <div class="btn-container">
@@ -678,10 +628,7 @@
                             <td>3</td>
                             <td>
                                 <div class="course-name">Комерційне товарознавство</div>
-                            </td>
-                            <td>
-                                Круглова
-                                <div class="teacher-name">Ольга Гнатівна</div>
+								<div class="teacher-name">Круглова Ольга Гнатівна</div>
                             </td>
                             <td>
                                 <div class="btn-container">
@@ -701,10 +648,7 @@
                             <td>4</td>
                             <td>
                                 <div class="course-name">Комерційна діяльність</div>
-                            </td>
-                            <td>
-                                Непочатова
-                                <div class="teacher-name">Галина Володимирівна</div>
+								<div class="teacher-name">Непочатова Галина Володимирівна</div>
                             </td>
                             <td>
                                 <div class="btn-container">
@@ -729,10 +673,7 @@
                             <td>5</td>
                             <td>
                                 <div class="course-name">Психологія особистості та професійної діяльності</div>
-                            </td>
-                            <td>
-                                Воронцова
-                                <div class="teacher-name">Вікторія Олексіївна</div>
+								<div class="teacher-name">Воронцова Вікторія Олексіївна</div>
                             </td>
                             <td>
                                 <div class="btn-container">
@@ -757,10 +698,7 @@
                             <td>6</td>
                             <td>
                                 <div class="course-name">Фінансовий облік</div>
-                            </td>
-                            <td>
-                                Тесленко
-                                <div class="teacher-name">Наталія Григорівна</div>
+								<div class="teacher-name">Тесленко Наталія Григорівна</div>
                             </td>
                             <td>
                                 <div class="btn-container">
@@ -780,10 +718,7 @@
                             <td>7</td>
                             <td>
                                 <div class="course-name">Ціноутворення</div>
-                            </td>
-                            <td>
-                                Кошляк
-                                <div class="teacher-name">Ольга Михайлівна</div>
+								<div class="teacher-name">Кошляк Ольга Михайлівна</div>
                             </td>
                             <td>
                                 <div class="btn-container">
@@ -808,10 +743,7 @@
                             <td>8</td>
                             <td>
                                 <div class="course-name">Економічний аналіз</div>
-                            </td>
-                            <td>
-                                Тесленко
-                                <div class="teacher-name">Наталія Григорівна</div>
+								<div class="teacher-name">Тесленко Наталія Григорівна</div>
                             </td>
                             <td>
                                 <div class="btn-container">
@@ -895,24 +827,7 @@
             </p>
         </section>
 		
-<!--        <section class="section">
-            <h2 class="section-title"><i class="fas fa-calendar-alt"></i> Розклад занять у 2 семестрі</h2>
-    
-            <div class="schedule-img-container">
-                <img 
-                    src="https://i.ibb.co/prjVy30h/2026-01-06-203248.png"
-                    alt="Розклад занять на 2 семестр для групи ПТ-32" 
-                    class="schedule-img" 
-                    id="schedule-img"
-                >
-            </div>
-    
-            <p style="text-align: center; color: var(--text-light); margin-top: 12px; font-size: 0.92rem;">
-                <i class="fas fa-search-plus"></i> Натисніть на зображення для збільшення
-            </p>
-        </section>
--->
-		
+	
         <section class="section">
             <h2 class="section-title"><i class="fas fa-calendar-week"></i> Розподіл тижнів</h2>
             
@@ -981,7 +896,7 @@
         </section>
         
         <div class="note">
-            <p><i class="fas fa-exclamation-circle" style="color: #2e7d32;"></i> <strong>Увага!</strong> Не забувайте про можливі перенесення і заміни занять.</p>
+            <p><i class="fas fa-exclamation-circle" style="color: #2e7d32;"></i> <strong>Увага!</strong> Не забувайте про можливі перенесення та заміни занять.</p>
             
             <div class="btn-container" style="margin-top: 8px;">
                 <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQlLOazl1JOcO5xS1-Ryan5BF2lve26w7lRG-hQTk3J48S8uwm8UtvWJmteeCyqVUtxqJVN7RHUc1I-/pubhtml?gid=0&single=true" class="btn btn-link touch-friendly btn-full" target="_blank">
@@ -994,7 +909,7 @@
         </div>
         
         <footer>
-            <p>Група ПТ-32 <span class="empty-slot">/</span><br>2 семестр 2025-2026</p>
+            <p>Група ПТ-32 / 2 семестр 2025-2026</p>
         </footer>
     </div>
 
